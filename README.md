@@ -26,8 +26,8 @@ income.head()  
 ## problem 2a  
 Transform the data set to have years as the rows and countries as the columns. show the head  
 ## correct solution  
-⚠️现在需要将行列互换，需要注意的是index不是columns[0],columns[0]是指index旁边那一列  
-因为采用了pd.read的写法，所以现在的index是0，1，2等数字，国家在‘正式格式’中的第一列（0，1，2在indexd的位置，但是索引的时候不能索引到这一列，所以columns[0]是指的index旁边的第一列，现在需要替换掉0，1，2这个index）  
+⚠️现在需要将行列互换，需要注意的是index不是columns[0],columns[0]是指index旁边那一列  
+因为采用了pd.read的写法，所以现在的index是0，1，2等数字，国家在‘正式格式’中的第一列（0，1，2在indexd的位置，但是索引的时候不能索引到这一列，所以columns[0]是指的index旁边的第一列，现在需要替换掉0，1，2这个index）  
 所以将第一列columns放在index的位置  
 > income.index = income[income.columns[0]]  
 
