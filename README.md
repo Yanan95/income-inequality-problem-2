@@ -43,6 +43,11 @@ Transform the data set to have years as the rows and countries as the columns. s
 
 #convert years from floats to ints#  
 map(function, sequence) ：对sequence中的item依次执行function(item)  
+编程中提到的 lambda 表达式，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数  
+
+> income = income.transpose()  
+income.head()  
+
 
 
 
