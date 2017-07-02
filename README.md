@@ -49,5 +49,22 @@ map(function, sequence) ：对sequence中的item依次执行function(item)
 income.head()  
 
 
+## problem 2b  
+Graphically display the distribution of income per person across all countries in the world for any given year (e.g. 2000).  
+
+distribution (income & frequency),所以采用直方图📊  
+> year = 2000  
+plt.plot(subplots=True)  
+plt.hist(income.ix[year].dropna().values, bins = 20)  
+plt.title('Year: %i' % year)  
+plt.xlabel('Income per person')  
+plt.ylabel('Frequency')  
+plt.show()  
+
+
+⚠️ income[income.index ==2000]得到的是一个dataframe,但是能根据数据画图的应该是一个series,所以应该用income.ix[2000]这种方式得到series. 
+
+
+
 
 
