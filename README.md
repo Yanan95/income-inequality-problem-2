@@ -56,7 +56,9 @@ distribution (income & frequency),所以采用直方图📊  
 > year = 2000  
 plt.plot(subplots=True)  
 plt.hist(income.ix[year].dropna().values, bins = 20)  
+
 plt.title('Year: %i' % year)  
+
 plt.xlabel('Income per person')  
 plt.ylabel('Frequency')  
 plt.show()  
