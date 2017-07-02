@@ -34,6 +34,7 @@ Transform the data set to have years as the rows and countries as the columns. s
 ⚠️ 记住这种用法，df.index, df.columns和其索引，income.columns[0]以及如何选中这个索引income[income.columns[0]]
 现在index就变成了国家名字，但是列表的第一列还是原来的国家名字，所以需要去掉这一列  
 > income = income.drop(income.columns[0]，axis=1)  
+
 ⚠️ 因为后面已经有了axis=1,所以括号内不用income[income.columns[0]],而是直接income.columns[0]
   
   
