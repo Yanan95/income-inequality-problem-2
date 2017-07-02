@@ -11,7 +11,7 @@ Using the list of countries by continent from World Atlas data, load in the coun
 import StringIO  
 url = 'https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv'  
 r = requests.get(url).content  
-s = StringIO.StringIO(r)
+s = StringIO.StringIO(r)  
 countries = pd.read_csv(s)  
 countries.head()  
 ### 这次直接从网页版导入xls
